@@ -11,6 +11,7 @@ public class SiberianWallnessMainPage {
     public final SelenideElement passwordFieldElement = $(By.name("userLoginPass"));
     public final SelenideElement blueButton = $(By.xpath("//button[text()='Войти']"));
 
+
     @Step
     public SiberianWallnessMainPage enterButtonClick(){
         enterButton.scrollIntoView(true).click();

@@ -32,6 +32,12 @@ public class PracticePage {
 
     File file = new File("src/test/resources/sample.jpg");
 
+
+    @Step("Открыть страницу PracticePage")
+    public PracticePage openPage(){
+        open(EndPoints.BASE_URL + EndPoints.PRACTICEFORM_ENDPOINT);
+        return this;
+    }
     @Step
     public PracticePage enterName() {
         firstNameInputField.shouldBe(visible);

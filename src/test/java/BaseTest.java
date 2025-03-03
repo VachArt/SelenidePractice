@@ -8,6 +8,9 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTest {
     static PracticePage practicePage;
+    static MailRuAutorizationPage mailRuAutorizationPage;
+
+
     @BeforeAll
 static void setUp() {
     SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
@@ -18,7 +21,8 @@ static void setUp() {
     Configuration.browserSize = "1920x1080";
     Configuration.headless = false;
     Configuration.holdBrowserOpen = true;
-    open("https://demoqa.com/automation-practice-form");
+    open("https://mail.ru/");
     practicePage = new PracticePage();
+    mailRuAutorizationPage = new MailRuAutorizationPage();
     }
 }

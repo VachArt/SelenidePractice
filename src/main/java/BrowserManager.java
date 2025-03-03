@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 
+
 public class BrowserManager {
     public static void setUpBrowser(String browser){
         if(browser.equals("chrome")){
